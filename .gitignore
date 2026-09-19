@@ -1,1 +1,25 @@
+# 环境变量与密钥
+.env
+.streamlit/secrets.toml
 
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# 数据文件（保留文件夹占位）
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# 输出文件
+outputs/*
+!outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
