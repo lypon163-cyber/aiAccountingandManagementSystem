@@ -52,7 +52,7 @@ if st.button("开始分析"):
 
         # 盈利能力图表
         st.subheader("盈利能力趋势")
-        fig_ profit = line_chart(profit_metrics, title="盈利能力")
+        fig_profit = line_chart(profit_metrics, title="盈利能力")
         st.plotly_chart(fig_profit, use_container_width=True)
 
         # 现金流质量图表
@@ -71,7 +71,7 @@ if st.button("开始分析"):
         净利率: {profit_metrics['净利率'].tolist()}
 
         现金流质量指标（近四年）：
-        经营现金流/净利润: {cash_metrics['经营现金流/净利润'].tolist()}
+        经营现金流/净利润: {_metrics['经营现金流/净利润'].tolist()}
         经营现金流/营业收入: {cash_metrics['经营现金流/营业收入'].tolist()}
 
         请用本科财务报表分析的语言，写一段简洁的解读，指出利润质量和现金流的变化趋势，并提示研究者应关注什么。
